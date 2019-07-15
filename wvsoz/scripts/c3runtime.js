@@ -679,11 +679,12 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.scrollto,
 		C3.Plugins.Browser,
 		C3.Behaviors.Sin,
-		C3.Plugins.Mouse.Cnds.OnWheel,
-		C3.Plugins.Keyboard.Cnds.OnKey,
 		C3.Plugins.System.Cnds.OnLayoutStart,
-		C3.ScriptsInEvents.Wvsoz_events_Event5_Act1,
+		C3.ScriptsInEvents.Wvsoz_events_Event1_Act1,
 		C3.Plugins.Sprite.Cnds.PickByUID,
+		C3.Plugins.Sprite.Acts.SetPos,
+		C3.Plugins.System.Exps.layoutwidth,
+		C3.Plugins.System.Exps.layoutheight,
 		C3.Plugins.Audio.Acts.Preload,
 		C3.Plugins.System.Acts.LoadLayoutTextures,
 		C3.Behaviors.Bullet.Acts.SetAngleOfMotion,
@@ -704,7 +705,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.Every,
 		C3.Plugins.System.Exps.random,
 		C3.Plugins.System.Cnds.Repeat,
-		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Plugins.Sprite.Acts.Spawn,
 		C3.Plugins.Sprite.Acts.MoveToBottom,
 		C3.Plugins.Sprite.Cnds.CompareY,
@@ -713,6 +713,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text.Cnds.PickByUID,
 		C3.Plugins.Text.Acts.SetFontColor,
 		C3.Plugins.Text.Acts.SetOpacity,
+		C3.Plugins.Keyboard.Cnds.OnKey,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
 		C3.Behaviors.Fade.Acts.StartFade,
 		C3.Plugins.Text.Acts.Destroy,
@@ -770,6 +771,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Audio.Cnds.IsSilent,
 		C3.Plugins.System.Acts.SetTimescale,
 		C3.Behaviors.DragnDrop.Acts.SetEnabled,
+		C3.Plugins.Mouse.Cnds.OnWheel,
 		C3.Plugins.Text.Acts.SetY,
 		C3.Plugins.Text.Exps.Y,
 		C3.Plugins.System.Exps.choose,
@@ -880,6 +882,10 @@ self.C3_GetObjectRefTable = function () {
 		() => 4,
 		() => 3,
 		() => 30,
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			return () => (f0() / 2);
+		},
 		() => 90,
 		() => 270,
 		() => "\n\n[color=rgb(255,255,255)][size=12]WIZARD VS ORC ZOMBIES[/size]\n— GAME INSTRUCTIONS —[/color]\n\nYOU ARE [color=rgb(120,160,210)]WIZARD[/color], THE ONLY ONE\nWHO CAN STOP THE [color=rgb(190,220,40)]ORC ZOMBIES[/color]\nFROM DESTROYING THE KINGDOM!\n\nYOU HAVE TWO DIFFERENT SPELLS:\n[color=rgb(220,180,232)]MISSILE[/color] PIERCES ENEMIES AND\n[color=rgb(245,110,32)]FIREBALL[/color] EXPLODES ON CONTACT\n\nSPELLS COST [color=rgb(0,160,240)]POWER[/color], WHICH\nREGENERATES OVER TIME.\nFETCH [color=rgb(0,200,200)]BONUS[/color] IF YOU SEE IT!\n\nYOU LOSE [color=rgb(220, 40, 40)]LIVES[/color] WHEN THE\nENEMIES REACH THE [color=rgb(100,110,120)]CASTLE[/color]!\n\n[size=8]SCROLL DOWN TO SEE\nA LIST OF COMMANDS![/size]\n\n\n\n\n\n\n- MOUSE [size=8](RECOMMENDED)[/size] -\nMOVE POINTER → [color=rgb(255,255,255)]ROTATE STAFF[/color]\nLEFT CLICK → [color=rgb(220,180,232)]MISSILE[/color]\nRIGHT CLICK → [color=rgb(245,110,32)]FIREBALL[/color]\nCLICK PAUSE ICON → [color=rgb(255,255,255)]PAUSE/UNPAUSE[/color]\nCLICK SOUND ICON → [color=rgb(255,255,255)]SOUNDS ON/OFF[/color]\n\n- KEYBOARD -\nLEFT/RIGHT ARROWS → [color=rgb(255,255,255)]ROTATE STAFF[/color]\nHOLD CTRL OR SHIFT → [color=rgb(255,255,255)]ROTATE FASTER[/color]\nUP ARROW → [color=rgb(220,180,232)]MISSILE[/color]\nDOWN ARROW → [color=rgb(245,110,32)]FIREBALL[/color]\nENTER → [color=rgb(255,255,255)]START GAME[/color]\nP → [color=rgb(255,255,255)]PAUSE/UNPAUSE[/color]\nM → [color=rgb(255,255,255)]SOUNDS ON/OFF[/color]\nF → [color=rgb(255,255,255)]FULLSCREEN ON/OFF[/color]\n\n[size=8]YOU CAN ALSO USE [color=rgb(255,255,255)]WASD[/color] OR [color=rgb(255,255,255)]IJKL[/color]\nINSTEAD OF THE ARROW KEYS![/size]",
@@ -1081,7 +1087,7 @@ self.C3_GetObjectRefTable = function () {
 {
 	const scriptsInEvents = {
 
-		async Wvsoz_events_Event5_Act1(runtime, localVars)
+		async Wvsoz_events_Event1_Act1(runtime, localVars)
 		{
 			kongregateAPI.loadAPI(function(){
 			  window.kongregate = kongregateAPI.getAPI();
