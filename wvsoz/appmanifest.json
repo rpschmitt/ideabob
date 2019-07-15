@@ -1,7 +1,7 @@
 {
 	"name": "Wizard vs Orc Zombies",
 	"short_name": "Wizard vs Orc Zombies",
-	"description": "",
+	"description": "A fantasy-themed retro shooter",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "portrait",
