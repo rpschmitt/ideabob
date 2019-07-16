@@ -988,13 +988,13 @@ self.C3_GetObjectRefTable = function () {
 		},
 		p => {
 			const n0 = p._GetNode(0);
-			return () => (n0.ExpObject() + 2);
+			return () => (n0.ExpObject() + 1);
 		},
 		p => {
 			const n0 = p._GetNode(0);
-			return () => (n0.ExpObject() + 10);
+			return () => (n0.ExpObject() + 5);
 		},
-		() => 40,
+		() => 20,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const v1 = p._GetNode(1).GetVar();
@@ -1005,7 +1005,6 @@ self.C3_GetObjectRefTable = function () {
 			const v1 = p._GetNode(1).GetVar();
 			return () => (f0(14, 18) - (v1.GetValue() * 6));
 		},
-		() => 20,
 		() => 175,
 		() => 99999,
 		p => {
@@ -1013,10 +1012,6 @@ self.C3_GetObjectRefTable = function () {
 			const n1 = p._GetNode(1);
 			const n2 = p._GetNode(2);
 			return () => f0(255, (255 - (n1.ExpInstVar() * 25)), (255 - (n2.ExpInstVar() * 25)));
-		},
-		p => {
-			const n0 = p._GetNode(0);
-			return () => (n0.ExpObject() + 1);
 		},
 		() => 6,
 		() => 24,
