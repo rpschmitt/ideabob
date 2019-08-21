@@ -1,7 +1,7 @@
 {
-	"name": "Bong",
-	"short_name": "Bong",
-	"description": "A fun and simple 2-player paddle game.",
+	"name": "Bong!",
+	"short_name": "Bong!",
+	"description": "The classic game everyone knows with a touch of... well, bongs!",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "landscape",
