@@ -1,6 +1,6 @@
 {
-	"name": "True Idle",
-	"short_name": "True Idle",
+	"name": "Time Idle",
+	"short_name": "Time Idle",
 	"description": "",
 	"start_url": "index.html",
 	"display": "fullscreen",
