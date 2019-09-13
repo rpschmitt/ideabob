@@ -1,0 +1,143 @@
+/* Ideabob's Prototype Gallery */
+
+* { margin: 0; padding: 0; }
+
+html {
+  height: 100%;
+  background: radial-gradient(farthest-corner at 50% 65%, #223344 20%, #111 100%)
+}
+
+p {
+  font-size: 2.4em;
+}
+
+a {
+  color: #99CC99;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+u {
+  color: #99CC99;
+  text-decoration: none;
+}
+
+#header, #content, #textbox, #footer {
+  position: fixed;
+  font: bold 1.2em Verdana, Geneva, sans-serif;
+  text-align: center;
+  color: #77AA77;
+  text-shadow: 2px 2px 2px #111111;
+}
+
+#header, #textbox, #footer {
+  width: 100%;
+}
+
+#header {
+  z-index: 3;
+  background-image: linear-gradient(#332244, #554466);
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: 48px;
+  line-height: 48px;
+  border-bottom: 2px solid #332244;
+  -webkit-box-shadow: 0px 0px 24px 12px #111;
+  -moz-box-shadow: 0px 0px 24px 12px #111;
+  box-shadow: 0px 0px 24px 12px #111;
+}
+
+#textbox {
+  z-index: 1;
+  width: 780px;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+}
+
+#content {
+  z-index: 4;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+
+#footer {
+  z-index: 2;
+  background-image: linear-gradient(#554466, #332244);
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: 36px;
+  line-height: 36px;
+  border-top: 2px solid #332244;
+  -webkit-box-shadow: 0px 0px 24px 12px #111;
+  -moz-box-shadow: 0px 0px 24px 12px #111;
+  box-shadow: 0px 0px 24px 12px #111;
+}
+
+.slider {
+  position: relative;
+  width: 363px;
+  height: 380px;
+}
+
+.slider li {
+  position: absolute;
+  list-style: none;
+}
+
+.slider img {
+  position: relative;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 24px;
+  -webkit-box-shadow: 0px 4px 24px 12px #111;
+  -moz-box-shadow: 0px 4px 24px 12px #111;
+  box-shadow: 0px 4px 24px 12px #111;
+}
+
+.slider input {
+  display: none;
+}
+
+.slider label {
+  background-image: linear-gradient(135deg, #554466, #110022);
+  bottom: -48px;
+  cursor: pointer;
+  display: block;
+  height: 32px;
+  position: absolute;
+  width: 32px;
+  z-index: 5;
+  -webkit-box-shadow: 1px 1px 4px 2px #111;
+  -moz-box-shadow: 1px 1px 4px 2px #111;
+  box-shadow: 1px 1px 4px 2px #111;
+  border-radius: 50%
+}
+
+.slider li:nth-child(1) label {left: 10px;}
+.slider li:nth-child(2) label {left: 49px;}
+.slider li:nth-child(3) label {left: 88px;}
+.slider li:nth-child(4) label {left: 127px;}
+.slider li:nth-child(5) label {left: 166px;}
+.slider li:nth-child(6) label {left: 205px;}
+.slider li:nth-child(7) label {left: 244px;}
+.slider li:nth-child(8) label {left: 283px;}
+.slider li:nth-child(9) label {left: 322px;}
+
+.slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 6;
+}
+
+.slider li input:checked ~ label {
+  background-image: linear-gradient(135deg, #887799, #221133);
+  color: #77EE77;
+}
