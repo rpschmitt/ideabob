@@ -25,36 +25,41 @@ a:hover {
   background-color: rgba(255,255,255,0.1);
 }
 .title {
-  padding: 24px 8px;
-  font-weight: bold;
-  text-decoration: underline dotted grey;
-  font-size: 1.5em;
-}
-.regular {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 360px;
-  padding: 12px 24px;
-}
-.games {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 360px;
-  min-height: 240px;
-  padding: 12px 4px;
-  overflow: hidden;
   background-image:url(gamevault.png);
   background-position:center;
   background-repeat:no-repeat;
+  padding: 64px 8px;
+  font-weight: bold;
+  text-decoration: underline dotted grey;
+  font-size: 1.8em;
+}
+.regular {
+  max-width: 392px;
+  padding: 0px 20px;
+}
+.games {
+  max-width: 360px;
+  min-height: 240px;
+  padding: 12px 0px;
+  overflow: hidden;
 }
 .games a {
   float: left;
   display: block;
   width: 50%;
-  padding: 12px;
+  padding: 16px;
 }
-.title, .regular, .games {
-  text-shadow: 0px 0px 4px black;
+.footer {
+  max-width: 392px;
+  padding: 0px 20px;
+  font-size: 1.2em;
+}
+.title, .regular, .games, .footer {
+  text-shadow: 0px 0px 6px black;
+}
+.regular, .games, .footer {
+  margin-left: auto;
+  margin-right: auto;
 }
 td {
   min-width: 420px;
@@ -69,21 +74,26 @@ td {
 <table align="center">
 <tr>
 <td>
-<div class="title">Ideabob's Game Vault</div>
-<div class="regular">Welcome! Here you'll find some of my ongoing game projects. If you received this link, please share your opinion and send some constructive criticism.</div><br>
+<div class="title">Ideabob's<br>Game Vault</div>
+<div class="regular">Welcome! This is the place where I stash my prototypes and partially finished games. Feel free to take a look around, they're all free to play and there aren't any ads as far as I know it. You can also <a href="mailto:ideabob@email.com">write me an email</a> or visit my <a href="https://ideabob.itch.io/">profile at itch.io</a>. All games here were made with <a target="construct" href="https://www.construct.net">Construct 3</a>.</div><br>
 <div class="games"><br>
-  <a target="wvsoz" rel="noopener noreferrer" href="/wvsoz">Wizard vs<br>Orc Zombies</a>
-  <a target="wvsoz2" rel="noopener noreferrer" href="/wvsoz2">Wizard vs<br>Orc Zombies II</a>
+  <a target="wvsoz" rel="noopener noreferrer" href="/wvsoz">Wizard vs<br>Orc Zombies<br>(Classic)</a>
+  <a target="wvsoz2" rel="noopener noreferrer" href="/wvsoz2">Wizard vs<br>Orc Zombies<br>II</a>
   <a target="99lives" rel="noopener noreferrer" href="/99lives">You Have<br>99 Lives</a>
   <a target="sillyrunner" rel="noopener noreferrer" href="/sillyrunner">Silly<br>Runner</a>
+  <a target="baldsgate" rel="noopener noreferrer" href="/baldsgate">Bald's Gate</a>
+  <a target="baldstale" rel="noopener noreferrer" href="/baldstale">Bald's Tale</a>
   <a target="bong" rel="noopener noreferrer" href="/bong">Bong!</a>
   <a target="timeidle" rel="noopener noreferrer" href="/timeidle">Time Idle</a>
+  <a target="gyro1" rel="noopener noreferrer" href="/gyro1">Gyroscope<br>Prototype A</a>
+  <a target="gyro2" rel="noopener noreferrer" href="/gyro2">Gyroscope<br>Prototype B</a>
   <a target="orblift" rel="noopener noreferrer" href="/orblift"><strike>Orb Lift</strike></a>
-  <a target="rracing" rel="noopener noreferrer" href="/rracing"><strike>Reggae<br>Racing</strike></a>
+  <a target="fartonauts" rel="noopener noreferrer" href="/fartonauts"><strike>Fartonauts</strike></a>
+  <a target="tankarena" rel="noopener noreferrer" href="/tankarena"><strike>Nuclear<br>Tank Arena</strike></a>
+  <a target="spacebugs" rel="noopener noreferrer" href="/spacebugs"><strike>Giant Mutant<br>Space Bugs</strike></a>
+  <a target="ywuiasl" rel="noopener noreferrer" href="/ywuiasl"><strike>You Wake Up in<br>a Strange Land</strike></a>
 </div><br>
-<div class="regular">You can contact me at<br>ideabob@email.com<br>All games were made with<br><a target="construct" href="https://www.construct.net">Scirra's Construct 3<br>(try it out for free!)</a></div><br>
-</td>
-</tr>
-</table>
+<div class="footer"><img src="beexcellent.png" alt="Be excellent to each other!" width="312" height="252"><br>Be excellent to each other!</div><br>
+</td></tr></table>
 </body>
 </html>
