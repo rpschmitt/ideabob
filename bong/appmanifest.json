@@ -1,7 +1,7 @@
 {
 	"name": "Bong!",
 	"short_name": "Bong!",
-	"description": "The classic game everyone knows with a touch of... well, bongs!",
+	"description": "The classic hit with a fresh twist",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "landscape",
