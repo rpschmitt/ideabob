@@ -37,3 +37,18 @@ html, body, canvas {
 }
 
 
+@font-face {
+	font-family: 'BongArial';
+	src: url('fonts/bongarial.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'BongMistral';
+	src: url('fonts/bongmistral.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'BongCourier';
+	src: url('fonts/bongcourier.ttf') format('truetype');
+}
+
