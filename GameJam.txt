@@ -1,0 +1,31 @@
+Act 1: Peaceful Lake
+Music: birds, uplifting, crickets
+Colors: light blue, light green
+- Pink Slime (most basic enemy)
+- Orange Slime (slow, shoots blob)
+BOSS: Red Slime (more like a sub-boss?)
+
+
+Act 2: Shady Woods
+Music: flute, owls hooting, leaves
+- Snake (moves slowly, then lunges at hero)
+- Bat (flies, swoops against hero)
+- Will ‘o’ Wisp (ranged “sparks” attack)
+BOSS: Possessed Tree (Malignant Ent?)
+
+
+Act 3: Murky Swamp
+Music: drums, mystical, dread
+Colors: purple, dark green, brown
+- Green Slime (re-textured Orange Slime, tougher and faster)
+- Frog (sticks out tongue to attack)
+- Ghost (vanishes, then reappears near the hero)
+BOSS: Swamp Creature (slow, summons slimes)
+
+
+Act 4: Gloomy Tower
+- Red Bat (re-textured Bat, tougher)
+- Vampire (slowly floats towards hero)
+- Skeleton (very tough, very slow)
+- Imp (hurls small fireballs from afar)
+BOSS: The Investor (Evil Investor?)
