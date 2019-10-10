@@ -1,0 +1,24 @@
+Nome: "Jogo de Nave pra Aula de Balanceamento"
+Autores: Roberto Schmitt e Pedro Flores
+Plataforma: Scirra Construct 3
+Linguagem: HTML5
+Gênero: ???
+
+Controle: 
+???
+
+Descrição: A guerra acabou. A Aliança Alienígena foi derrotada
+pelos invasores, o Império Invencícel.Você controla um piloto
+rebelde da Aliança que, indignado com a derrota injusta do seu
+povo, sequestra uma nave e parte com tudo para cima do inimigo,
+invadindo a nave-mãe Imperial e explodindo tudo no caminho.
+
+Estágios:
+???
+
+Power-ups:
+???
+
+Inimigos:
+???
+
