@@ -1,7 +1,7 @@
 {
-	"name": "SpaceGuts",
-	"short_name": "SpaceGuts",
-	"description": "Do you have the guts to save the whole world? Think twice, it's a nasty job.",
+	"name": "GutBlaster",
+	"short_name": "GutBlaster",
+	"description": "Do you have the guts to save the world?",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "landscape",

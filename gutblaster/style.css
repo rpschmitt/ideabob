@@ -37,3 +37,8 @@ html, body, canvas {
 }
 
 
+@font-face {
+	font-family: 'futurespore';
+	src: url('fonts/futurespore.ttf') format('truetype');
+}
+
