@@ -1,6 +1,6 @@
 {
-	"name": "MonkGame",
-	"short_name": "MonkGame",
+	"name": "Monk Game",
+	"short_name": "Monk Game",
 	"description": "GameJam FADERGS",
 	"start_url": "index.html",
 	"display": "fullscreen",

@@ -37,3 +37,8 @@ html, body, canvas {
 }
 
 
+@font-face {
+	font-family: 'go3v2';
+	src: url('fonts/go3v2.ttf') format('truetype');
+}
+
