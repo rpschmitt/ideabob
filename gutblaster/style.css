@@ -42,3 +42,8 @@ html, body, canvas {
 	src: url('fonts/futurespore.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'prstartk';
+	src: url('fonts/prstartk.ttf') format('truetype');
+}
+
