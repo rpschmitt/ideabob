@@ -37,3 +37,8 @@ html, body, canvas {
 }
 
 
+@font-face {
+	font-family: 'ChemyRetro_v01';
+	src: url('fonts/chemyretro_v01.ttf') format('truetype');
+}
+

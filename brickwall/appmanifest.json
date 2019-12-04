@@ -1,11 +1,11 @@
 {
-	"name": "Silly Runner",
-	"short_name": "Silly Runner",
-	"description": "Run, silly!",
+	"name": "BrickWall",
+	"short_name": "BrickWall",
+	"description": "You hit a brick wall.",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "landscape",
-	"background_color": "#c0c0c0",
+	"background_color": "#ffffff",
 	"icons": [
 		{
 			"src": "icons/icon-16.png",
