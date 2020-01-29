@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Ideabob's Prototype Gallery</title>
+
+<style>
+
+* {
+  margin: 0; padding: 0;
+}
+
+html {
+  height: 100%;
+  background: radial-gradient(farthest-corner at 50% 65%, #223344 20%, #111 100%)
+}
+
+a, u {
+  color: #99CC99;
+  text-decoration: none;
+}
+
+#header, #textbox, #content, #footer {
+  position: fixed;
+  font: bold 1em Verdana, Geneva, sans-serif;
+  text-align: center;
+  color: #77AA77;
+  text-shadow: 2px 2px 2px #111111;
+}
+
+#header, #textbox, #footer {
+  width: 100%;
+}
+
+#header {
+  z-index: 3;
+  background-image: linear-gradient(#332244, #554466);
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: 48px;
+  line-height: 48px;
+  border-bottom: 2px solid #332244;
+  -webkit-box-shadow: 0px 0px 24px 12px #111;
+  -moz-box-shadow: 0px 0px 24px 12px #111;
+  box-shadow: 0px 0px 24px 12px #111;
+}
+
+#textbox {
+  z-index: 1;
+  min-width: 600px;
+  max-width: 800px;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -12%);
+  line-height: 150%;
+}
+
+#content {
+  z-index: 4;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+
+#footer {
+  z-index: 2;
+  background-image: linear-gradient(#554466, #332244);
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: 36px;
+  line-height: 36px;
+  border-top: 2px solid #332244;
+  -webkit-box-shadow: 0px 0px 24px 12px #111;
+  -moz-box-shadow: 0px 0px 24px 12px #111;
+  box-shadow: 0px 0px 24px 12px #111;
+}
+
+.slider {
+  position: relative;
+  width: 363px;
+  height: 380px;
+}
+
+.slider li {
+  position: absolute;
+  list-style: none;
+}
+
+.slider img {
+  position: relative;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 24px;
+  -webkit-box-shadow: 0px 4px 24px 12px #111;
+  -moz-box-shadow: 0px 4px 24px 12px #111;
+  box-shadow: 0px 4px 24px 12px #111;
+}
+
+.slider input {
+  display: none;
+}
+
+.slider label {
+  background-image: linear-gradient(135deg, #554466, #110022);
+  bottom: -48px;
+  cursor: pointer;
+  display: block;
+  height: 32px;
+  position: absolute;
+  width: 32px;
+  z-index: 5;
+  -webkit-box-shadow: 1px 1px 4px 2px #111;
+  -moz-box-shadow: 1px 1px 4px 2px #111;
+  box-shadow: 1px 1px 4px 2px #111;
+  border-radius: 50%
+}
+
+.slider li:nth-child(1) label {left: 10px;}
+.slider li:nth-child(2) label {left: 49px;}
+.slider li:nth-child(3) label {left: 88px;}
+.slider li:nth-child(4) label {left: 127px;}
+.slider li:nth-child(5) label {left: 166px;}
+.slider li:nth-child(6) label {left: 205px;}
+.slider li:nth-child(7) label {left: 244px;}
+.slider li:nth-child(8) label {left: 283px;}
+.slider li:nth-child(9) label {left: 322px;}
+
+.slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 6;
+}
+
+.slider li input:checked ~ label {
+  background-image: linear-gradient(135deg, #887799, #221133);
+  color: #77EE77;
+}
+
+</style>
+</head>
+
+<body>“Our approach to making games is to find the fun first and then use the technology to enhance the fun.” — Sid Meier
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; text-align: center;"><tr><td valign="top">
+
+<div id="header">
+  <h2>Ideabob's Prototype Gallery<h2>
+</div>
+
+<div id="textbox">
+  Welcome! I'm <u>Ideabob</u>, an amateur game developer. In the beginning of 2019 I started building games with this nifty tool called <a href="???">Construct 3</a> and I loved it. The result was a lot of abandoned prototypes and some half-finished games I still work on whenever I can. The <u>Prototype Gallery</u> is meant to share these games with the world, free of charge. I intend to add more content regularly, so don't forget to check back. To play them, click the buttons to browse then click the image to open the game in a new window (make sure your browser supports HTML5). I hope you enjoy your stay, have fun!
+</div>
+
+<div id="content">
+  <ul class="slider">
+      <li><a href="01.html" target="01">
+      <input type="radio" id="slide01" name="slide" checked>
+      <label for="slide01"><sub>01</sub></label>
+      <img src="img/01.png" /></a>
+    </li>
+    <li><a href="02.html" target="02">
+      <input type="radio" id="slide02" name="slide">
+      <label for="slide02"><sub>02</sub></label>
+      <img src="img/02.png" /></a>
+    </li>
+    <li><a href="03.html" target="03">
+      <input type="radio" id="slide03" name="slide">
+      <label for="slide03"><sub>03</sub></label>
+      <img src="img/03.png" /></a>
+    </li>
+    <li><a href="04.html" target="04">
+      <input type="radio" id="slide04" name="slide">
+      <label for="slide04"><sub>04</sub></label>
+      <img src="img/04.png" /></a>
+    </li>
+    <li><a href="05.html" target="05">
+      <input type="radio" id="slide05" name="slide">
+      <label for="slide05"><sub>05</sub></label>
+      <img src="img/05.png" /></a>
+    </li>
+    <li><a href="06.html" target="06">
+      <input type="radio" id="slide06" name="slide">
+      <label for="slide06"><sub>06</sub></label>
+      <img src="img/06.png" /></a>
+    </li>
+    <li><a href="07.html" target="07">
+      <input type="radio" id="slide07" name="slide">
+      <label for="slide07"><sub>07</sub></label>
+      <img src="img/07.png" /></a>
+    </li>
+    <li><a href="08.html" target="08">
+      <input type="radio" id="slide08" name="slide">
+      <label for="slide08"><sub>08</sub></label>
+      <img src="img/08.png" /></a>
+    </li>
+    <li><a href="09.html" target="09">
+      <input type="radio" id="slide09" name="slide">
+      <label for="slide09"><sub>09</sub></label>
+      <img src="img/09.png" /></a>
+    </li>
+  </ul>
+</div>
+
+<div id="footer">
+  Don't hesitate to contact me at <a href="mailto:ideabob@mail.com">ideabob@mail.com</a>!
+</div>
+
+</td></tr></table>
+</body>
+</html>
+
+
+
