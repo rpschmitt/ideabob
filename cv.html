@@ -6,63 +6,106 @@
 <style>
 
 * { 
-    margin:0; padding:0; 
+    margin: 0; padding: 0; 
     box-sizing: border-box;
 }
 
 body {
-    margin: 20px auto 20px;
-    max-width: 900px;
     font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
     background: #EEE;
-    background: -webkit-linear-gradient(90deg, #DDD, #FFF, #FFF, #DDD);
-    background: linear-gradient(90deg, #DDD, #FFF, #FFF, #DDD);
+    background: -webkit-linear-gradient(90deg, #CCC, #000, #000, #000, #CCC);
+    background: linear-gradient(90deg, #333, #111, #000, #111, #333);
+    margin: 1em 0.2em;
 }
 
-li {
-    float: left;
-    list-style-type: none;
-}
-
-li:nth-child(even) {
-    margin-bottom: 5em;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 0.5em 0.5em;
+    width: 100%;
+    max-width: 800px;
+    background: #EEE;
+    border: 3px outset #888;
+    border-radius: 24px
 }
 
 h1 {
-    text-shadow: 2px 2px 3px #BBB;
-    font-size: 2.5em;
+    font-size: 2.4em;
+    line-height: 0.7;
+    background: linear-gradient(to right, #222, #666, #222);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 1em #000;
 }
 
 h2 {
-    text-shadow: 2px 2px 2px #BBB;
-    font-size: 1.5em;
+    font-size: 1.4em;
+    line-height: 1.3;
+    color: #666;
+    text-shadow: 0 0 1.8em #000;
 }
 
 h3 {
-    margin: 0 0 0.5em;
-    padding-top: 1.5em;
-    text-shadow: 1px 1px 2px #BBB;
+    margin-bottom: 0.5em;
+    padding: 0.2em 0;
+    font-size: 1em;
+    color: #FFF;
+    background: #444;
+    background: -webkit-linear-gradient(180deg, #222, #666 50%, #222);
+    background: linear-gradient(180deg, #222, #666 50%, #222);
+    border: 1px solid #DDD;
+    border-radius: 24px;
+    text-shadow: 0.05em 0.05em 0.1em #000;
 }
 
-.title, h3 {
-    border-bottom: 1px solid #CCCCC8;
-    background: #EEE;
-    background: -webkit-linear-gradient(180deg, #FFFFFB, #FFFFFB, #DDDDD9);
-    background: linear-gradient(180deg, #FFFFFB, #FFFFFB, #DDDDD9);
+h1, h2, h3 {
+    text-align: center;
 }
 
 .title {
-    margin-bottom: 1em;
-    text-align: center;
-    padding: 0.5em 0;
+    min-height: 120px;
+    line-height: 1.5em;
+}
+
+.content, .title {
+    width: 49%;
+    margin: 0.5%;
+}
+
+b {
+    margin-left: 0.5em;
+    color: #000;
+    text-shadow: 0.05em 0.05em 0.05em #FFF;
+}
+
+b:before {
+    content: '» ';
+    font-size: 0.8em;
+    color: #666;
+}
+
+hr {
+    margin: 0.5em;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(160, 160, 160, 0.4), rgba(160, 160, 160, 0.8), rgba(160, 160, 160, 0.4));
+}
+
+li {
+    width: 33%;
+    float: left;
+    list-style-type: none;
+    padding: 0.5em 0.5em 0;
 }
 
 progress[value] {
     appearance: none;
     border: none;
     width: 100%; height: 16px;
-    background-color: whiteSmoke;
-    border-radius: 3px;
+    background-color: #EEE;
+    border-radius: 8px;
     box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
     color: black;
     position: relative;
@@ -70,19 +113,16 @@ progress[value] {
 }
 
 progress[value]::-webkit-progress-bar {
-    background-color: whiteSmoke;
-    border-radius: 3px;
-    box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 3px 3px rgba(0,0,0,.5) inset;
 }
 
 progress[value]::-webkit-progress-value {
     position: relative;
     background-size: 4px 16px, 100% 100%, 100% 100%;
-    border-radius:3px;
-    animation: animate-stripes 5s linear infinite;
+    border-radius:8px;
 }
-
-@keyframes animate-stripes { 100% { background-position: -100px 0; } }
 
 progress[value]::-webkit-progress-value:after {
     content: '';
@@ -104,21 +144,21 @@ progress[value]::-moz-progress-bar {
     -moz-linear-gradient( top,
         rgba(255, 255, 255, .25),
         rgba(0,0,0,.2)),
-     -moz-linear-gradient( left, #09c, #f44);
+     -moz-linear-gradient( 90deg, #222, #888, #222);
     background-size: 4px 16px, 100% 100%, 100% 100%;
-    border-radius:3px;
+    border-radius:8px;
 }
 
 .progress-bar {
-    background-color: whiteSmoke;
-    border-radius: 3px;
+    background-color: #000;
+    border-radius: 8px;
     box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
     width: 100%; height:16px;
 }
 
 .progress-bar span {
-    background-color: royalblue;
-    border-radius: 3px;
+    background-color: #000;
+    border-radius: 8px;
     display: block;
     text-indent: -9999px;
 }
@@ -129,10 +169,10 @@ p[data-value] {
 
 p[data-value]:after {
     content: attr(data-value) '%';
-    position: absolute; right:0;
+    position: absolute; right:-5%;
 }
 
-.language::-webkit-progress-value {
+.skill::-webkit-progress-value {
     background-image:
     -webkit-linear-gradient( 180deg,
         transparent,
@@ -143,10 +183,10 @@ p[data-value]:after {
     -webkit-linear-gradient( top,
         rgba(255, 255, 255, .25),
         rgba(0,0,0,.2)),
-     -webkit-linear-gradient( left, #822, #C66);
+     -webkit-linear-gradient( 90deg, #222, #888, #222);
 }
 
-.language::-moz-progress-bar {
+.skill::-moz-progress-bar {
     background-image:
     -moz-linear-gradient( 180deg,
         transparent,
@@ -157,259 +197,192 @@ p[data-value]:after {
     -moz-linear-gradient( top,
         rgba(255, 255, 255, .25),
         rgba(0,0,0,.2)),
-     -moz-linear-gradient( left, #822, #C66);
+     -moz-linear-gradient( 90deg, #444, #666, #444);
 }
 
-.software::-webkit-progress-value {
-    background-image:
-    -webkit-linear-gradient( 180deg,
-        transparent,
-        transparent 33%,
-        rgba(0,0,0,.1) 33%,
-        rgba(0,0,0,.1) 66%,
-        transparent 66%),
-    -webkit-linear-gradient( top,
-        rgba(255, 255, 255, .25),
-        rgba(0,0,0,.2)),
-     -webkit-linear-gradient( left, #282, #6C6);
-}
-
-.software::-moz-progress-bar {
-    background-image:
-    -moz-linear-gradient( 180deg,
-        transparent,
-        transparent 33%,
-        rgba(0,0,0,.1) 33%,
-        rgba(0,0,0,.1) 66%,
-        transparent 66%),
-    -moz-linear-gradient( top,
-        rgba(255, 255, 255, .25),
-        rgba(0,0,0,.2)),
-     -moz-linear-gradient( left, #282, #6C6);
-}
-
-.other::-webkit-progress-value {
-    background-image:
-    -webkit-linear-gradient( 180deg,
-        transparent,
-        transparent 33%,
-        rgba(0,0,0,.1) 33%,
-        rgba(0,0,0,.1) 66%,
-        transparent 66%),
-    -webkit-linear-gradient( top,
-        rgba(255, 255, 255, .25),
-        rgba(0,0,0,.2)),
-     -webkit-linear-gradient( left, #228, #66C);
-}
-
-.other::-moz-progress-bar {
-{
-    background-image:
-    -moz-linear-gradient( 180deg,
-        transparent,
-        transparent 33%,
-        rgba(0,0,0,.1) 33%,
-        rgba(0,0,0,.1) 66%,
-        transparent 66%),
-    -moz-linear-gradient( top,
-        rgba(255, 255, 255, .25),
-        rgba(0,0,0,.2)),
-     -moz-linear-gradient( left, #228, #66C);
+@media screen and (max-width: 600px) {
+  .content, .title {
+    width: 98%;
+  }
+  li {
+      width: 100%;
+  }
 }
 
 </style>
 </head>
 <body>
 
-<div class="title">
-    <h2>&mdash; <em>curriculum vitae</em> &mdash;</h2>
-    <h1>Roberto Schmitt</h1>
-</div>
+<div class="container">
 
+  <div class="title">
+      <div style="height: 38%"></div>
+      <h1>Roberto Schmitt</h1>
+      <h2><span style="color: #BBB; font-size: 0.7em">///</span> <em>web & game designer</em> <span style="color: #BBB; font-size: 0.7em">///</span></h2>
+      <div style="height: 24%"></div>
+  </div>
+
+    <div class="content" style="text-align: left">
+      <h3>DADOS GERAIS</h3>
+      <b>Nome:</b> Roberto Schmitt<br>
+      <b>Nascimento:</b> 17/10/1985<br>
+      <b>Endereço:</b> Rua Felipe Camarão 617/32<br>
+      <b>Bairro:</b> Rio Branco<br>
+      <b>Cidade:</b> Porto Alegre, RS<br>
+      <b>E-mail:</b> roberto.schmitt@email.com<br>
+      <b>Fone:</b> (51)99614-1642<br>
+      <br>
+    </div>
+
+    <div class="content" style="text-align: justify">
+      <h3>OBJETIVO</h3>
+      <span style="font-size: 1.1em">&emsp;&ensp;Trabalhar na indústria de jogos de Porto Alegre a fim de desenvolver carreira como <em>game designer</em>. Atualmente tenho disponibilidade para meio período e interesse em propostas de estágio.</span><br>
+      <br>
+    </div>
+
+    <div class="content" style="text-align: left">
+      <h3>ESCOLARIDADE</h3>
+      <b>Curso:</b> Jogos Digitais <em>(3º semestre)</em><br>
+      <b>Nível:</b> Superior</em><br>
+      <b>Instituição:</b> FADERGS<br>
+      <hr>
+      <b>Curso:</b> Desenvolvedor de Games<br>
+      <b>Nível:</b> Técnico<br>
+      <b>Instituição:</b> Senac Tech<br>
+      <br>
+    </div>
+
+    <div class="content" style="text-align: justify">
+      <h3>QUALIFICAÇÕES</h3>
+      <span style="font-size: 1.1em">&emsp;&ensp;Sou bom comunicador e tenho talento para trabalhos criativos, além de ampla experiência com língua inglesa e produção textual. Recentemente tenho expandido meu leque de competências estudando programação, <em>web design</em>, pintura digital e modelagem 3D.</span><br>
+      <br>
+    </div>
+
+    <div class="content" style="text-align: left">
+      <h3>EXPERIÊNCIA PROFISSIONAL</h3>
+      <b>Empresa:</b> Porto Idiomas<br>
+      <b>Cargo:</b> Instrutor de Língua Inglesa<br>
+      <b>Período:</b> 03/2015 a 12/2017<br>
+      <hr>
+      <b>Empresa:</b> TopWay English School<br>
+      <b>Cargo:</b> Instrutor de Língua Inglesa<br>
+      <b>Período:</b> 03/2012 a 12/2014<br>
+      <hr>
+      <b>Empresa:</b> Attitude Idiomas<br>
+      <b>Cargo:</b> Instrutor de Língua Inglesa<br>
+      <b>Período:</b> 04/2010 a 12/2011<br>
+      <br>
+    </div>
+
+<div class="content" style="width: 100%">
 <ul>
-    <li style="width: 50%; padding-right: 5%">
-      <div style="width: auto; height: auto">
 
-        <h3>&nbsp;&raquo; Dados gerais:</h3>
-        <p>
-        &ensp;<b>Nome</b>: Roberto Schmitt<br>
-        &ensp;<b>Nascimento</b>: 17/10/1985<br>
-        &ensp;<b>Endereço</b>: Rua Felipe Camarão, 617<br>
-        &ensp;<b>Complemento</b>: Apto 32<br>
-        &ensp;<b>Bairro</b>: Rio Branco<br>
-        &ensp;<b>CEP</b>: 90035-141<br>
-        &ensp;<b>Cidade</b>: Porto Alegre, RS<br>
-        &ensp;<b>E-mail</b>: roberto.schmitt@email.com<br>
-        &ensp;<b>Fone</b>: (51)99614-1642
-        </p>
+<h3 style="width: 100%; margin-bottom: 0">COMPETÊNCIAS</h3>
 
-        <h3>&nbsp;&raquo; Objetivo:</h3>
-        &emsp;&ensp;Trabalhar na indústria de jogos de Porto Alegre a fim de desenvolver carreira como <em>game designer</em>. Atualmente tenho disponibilidade para meio período e interesse em propostas de estágio.
-
-        <h3>&nbsp;&raquo; Qualificações:</h3>
-        <p>
-        &emsp;&ensp;Sou bom comunicador e tenho talento para trabalhos criativos, além de ampla experiência com língua inglesa e produção textual. Recentemente tenho expandido meu leque de competências estudando programação, <em>web design</em>, pintura digital e modelagem 3D.
-        </p>
-
-        <h3>&nbsp;&raquo; Escolaridade:</h3>
-        <p>
-        &ensp;<b>Curso</b>: Design de Games <em>(cursando, 3º semestre)</em><br>
-        &ensp;<b>Nível</b>: Superior</em><br>
-        &ensp;<b>Instituição de Ensino</b>: FADERGS <em>(Faculdade de Desenvolvimento do Rio Grande do Sul)</em>
-        </p>
-        <br>
-        <p>
-        &ensp;<b>Curso</b>: Desenvolvedor de Games<br>
-        &ensp;<b>Nível</b>: Técnico<br>
-        &ensp;<b>Instituição</b>: Senac Tech
-        </p>
-
-        <h3>&nbsp;&raquo; Experiência profissional:</h3>
-        <p>
-        &ensp;<b>Empresa</b>: Porto Idiomas<br>
-        &ensp;<b>Cargo</b>: Instrutor de Língua Inglesa<br>
-        &ensp;<b>Período</b>: 03/2015 a 12/2017
-        </p>
-        <br>
-        <p>
-        &ensp;<b>Empresa</b>: TopWay English School<br>
-        &ensp;<b>Cargo</b>: Instrutor de Língua Inglesa<br>
-        &ensp;<b>Período</b>: 03/2012 a 12/2014
-        </p>
-        <br>
-        <p>
-        &ensp;<b>Empresa</b>: Attitude Idiomas<br>
-        &ensp;<b>Cargo</b>: Instrutor de Língua Inglesa<br>
-        &ensp;<b>Período</b>: 04/2010 a 12/2011
-        </p><br><br>
-
-      </div>
-    </li>
-    <li style="width: 50%">
-      <div style="width: auto; height: auto">
-
-        <h3>&nbsp;&raquo; Linguagens de programação:</h3>
-
-        <!-- HTML5 -->
-        <p style="width:81%" data-value="81">HTML5</p>
-        <progress max="100" value="81" class="language">
+<div style="width: auto">
+    <li style="border-right: 1px solid #EEE">
+        <div style="font-weight: bold; text-align: center; margin: 0em 0 0.4em">CÓDIGO</div>
+        <p style="width:86%" data-value="81">HTML5</p>
+        <progress max="100" value="81" class="skill">
         <div class="progress-bar">
         <span style="width: 81%">81%</span>
         </div></progress>
-
-        <!-- CSS3 -->
-        <p style="width:74%" data-value="74">CSS3</p>
-        <progress max="100" value="74" class="language">
+        <p style="width:79%" data-value="74">CSS3</p>
+        <progress max="100" value="74" class="skill">
         <div class="progress-bar">
         <span style="width: 74%">74%</span>
         </div></progress>
-
-        <!-- C# -->
-        <p style="width:35%" data-value="35">C#</p>
-        <progress max="100" value="35" class="language">
+        <p style="width:40%" data-value="35">C#</p>
+        <progress max="100" value="35" class="skill">
         <div class="progress-bar">
         <span style="width: 35%">35%</span>
         </div></progress>
-
-        <!-- C++ -->
-        <p style="width:22%" data-value="22">C++</p>
-        <progress max="100" value="22" class="language">
+        <p style="width:27%" data-value="22">C++</p>
+        <progress max="100" value="22" class="skill">
         <div class="progress-bar">
         <span style="width: 22%">22%</span>
         </div></progress>
-
-        <!-- JS -->
-        <p style="width:18%" data-value="18">JS</p>
-        <progress max="100" value="18" class="language">
+        <p style="width:24%" data-value="19">JS</p>
+        <progress max="100" value="19" class="skill">
         <div class="progress-bar">
-        <span style="width: 18%">18%</span>
+        <span style="width: 19%">19%</span>
         </div></progress>
+    </li>
+</div>
 
-        <h3>&nbsp;&raquo; Softwares específicos:</h3>
-
-        <!-- Construct 3 -->
-        <p style="width:86%" data-value="86">Construct 3</p>
-        <progress max="100" value="86" class="software">
+<div style="width: auto">
+    <li style="margin-left: 0.5%; margin-right: 0.5%">
+        <div style="font-weight: bold; text-align: center; margin: 0em 0 0.4em">APLICATIVOS</div>
+        <p style="width:91%" data-value="86">Construct 3</p>
+        <progress max="100" value="86" class="skill">
         <div class="progress-bar">
         <span style="width: 86%">86%</span>
         </div></progress>
-
-        <!-- Paint.NET -->
-        <p style="width:83%" data-value="83">Paint.NET</p>
-        <progress max="100" value="83" class="software">
+        <p style="width:88%" data-value="83">Paint.NET</p>
+        <progress max="100" value="83" class="skill">
         <div class="progress-bar">
         <span style="width: 83%">83%</span>
         </div>
         </progress>
-
-        <!-- RPG Maker -->
-        <p style="width:58%" data-value="58">RPG Maker</p>
-        <progress max="100" value="58" class="software">
-        <div class="progress-bar">
-        <span style="width: 58%">58%</span>
-        </div>
-        </progress>
-
-        <!-- Blender -->
-        <p style="width:44%" data-value="44">Blender</p>
-        <progress max="100" value="44" class="software">
+        <p style="width:49%" data-value="44">Blender</p>
+        <progress max="100" value="44" class="skill">
         <div class="progress-bar">
         <span style="width: 44%">44%</span>
         </div></progress>
-
-        <!-- 3DS Max -->
-        <p style="width:39%" data-value="39">3DS Max</p>
-        <progress max="100" value="39" class="software">
+        <p style="width:44%" data-value="39">3DS Max</p>
+        <progress max="100" value="39" class="skill">
         <div class="progress-bar">
         <span style="width: 39%">39%</span>
         </div></progress>
-
-        <!-- Unity -->
-        <p style="width:38%" data-value="38">Unity</p>
-        <progress max="100" value="38" class="software">
+        <p style="width:43%" data-value="38">Unity</p>
+        <progress max="100" value="38" class="skill">
         <div class="progress-bar">
         <span style="width: 38%">38%</span>
         </div>
         </progress>
+    </li>
+</div>
 
-        <h3>&nbsp;&raquo; Outras competências:</h3>
-
-        <!-- Língua Inglesa -->
-        <p style="width:96%" data-value="96">Língua Inglesa</p>
-        <progress max="100" value="96" class="other">
+<div style="width: auto">
+    <li style="border-left: 1px solid #EEE">
+        <div style="font-weight: bold; text-align: center; margin: 0em 0 0.4em">LINGUAGEM</div>
+        <p style="width:100%" data-value="95">Inglês</p>
+        <progress max="100" value="95" class="skill">
         <div class="progress-bar">
-        <span style="width: 96%">96%</span>
+        <span style="width: 95%">95%</span>
         </div>
         </progress>
-
-        <!-- Escrita Criativa -->
-        <p style="width:93%" data-value="93">Escrita Criativa</p>
-        <progress max="100" value="93" class="other">
+        <p style="width:98%" data-value="93">Escrita</p>
+        <progress max="100" value="93" class="skill">
         <div class="progress-bar">
         <span style="width: 93%">93%</span>
         </div>
         </progress>
-
-        <!-- Voice Acting -->
-        <p style="width:74%" data-value="74">Voice Acting</p>
-        <progress max="100" value="74" class="other">
+        <p style="width:79%" data-value="74">Dublagem</p>
+        <progress max="100" value="74" class="skill">
         <div class="progress-bar">
         <span style="width: 74%">74%</span>
         </div>
         </progress>
-
-        <!-- Língua Espanhola -->
-        <p style="width:48%" data-value="48">Língua Espanhola</p>
-        <progress max="100" value="48" class="other">
+        <p style="width:71%" data-value="66">Legendagem</p>
+        <progress max="100" value="66" class="skill">
+        <div class="progress-bar">
+        <span style="width: 66%">66%</span>
+        </div>
+        </progress>
+        <p style="width:53%" data-value="48">Espanhol</p>
+        <progress max="100" value="48" class="skill">
         <div class="progress-bar">
         <span style="width: 48%">48%</span>
         </div>
         </progress>
-
-      </div>
     </li>
+</div>
+
 </ul>
+</div>
 
 </div>
+
 </body>
 </html>
