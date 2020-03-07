@@ -1,7 +1,7 @@
 {
 	"name": "Secret in the Sky",
 	"short_name": "Secret in the Sky",
-	"description": "For Paula.",
+	"description": "A game I made for my wife, Paula.",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "portrait",
