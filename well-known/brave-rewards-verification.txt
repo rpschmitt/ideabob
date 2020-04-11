@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: ideabob.netlify.com
+Token: 1d0b33092acd6a3bd3021a0022bcf6cdc5e0e3252eb7db4e513624a9eada61c6
