@@ -10,9 +10,9 @@ body {
 
   font-family: "Work Sans", sans-serif;
 
-  line-height: 1.8;
+  line-height: 1.5;
 
-  font-size: 18px;
+  font-size: 16px;
 
   background: #060802;
 
@@ -42,7 +42,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
 
-  line-height: 1.45;
+  line-height: 1.5;
 
   font-weight: normal;
 
@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5,
 
         padding: 0;
 
-        margin: 8px 0 8px 0;
+        margin: 6px 0 6px 0;
 
         display: block;
 
@@ -274,7 +274,7 @@ h1, h2, h3, h4, h5,
 
   float: right;
 
-  padding: 40px 20px;
+  padding: 20px 20px;
   position: relative;
  }
 
@@ -402,15 +402,14 @@ h1, h2, h3, h4, h5,
       padding: 48px 12px;
  }
  }
-
   @media screen and (max-width: 1366px) {
 
     .probootstrap-main .card-columns {
-      -webkit-columns: 2;
+      -webkit-columns: 3;
 
-      -moz-columns: 2;
+      -moz-columns: 3;
 
-      columns: 2;
+      columns: 3;
  }
  }
 
