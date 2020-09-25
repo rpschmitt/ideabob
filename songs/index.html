@@ -13,147 +13,161 @@
 
   <style>
     body {background-color: #222222; font-size: 1.2em; margin: auto; width: 50%; min-width: 600px; text-align: center; line-height: 140%;}
-    h1, h2, p {color: #AAAA44; font-family: Verdana;}
+    h1, h2, p {font-family: Verdana;}
+    h1, h2 {color: #AAAA44; text-shadow: 2px 2px 2px #000000;}
+    p {color: #000066; text-shadow: 1px 1px 2px #BBBBBB; padding: 6px;}
+    a:link, a:visited, a:active {color: #000088;}
+    a:hover {color: #4444FF;}
     .text {background-color: #111111; border: 5px outset #333399; padding: 30px; margin: 30px 10px;}
     .songs {background-color: #FFFFFF; border: 5px outset #333399; padding: 30px; margin: 30px 10px;}
+    .header {background-color: #FFFFFF; border: 5px outset #333399; padding: 10px; margin: 10px 10px;}
+    .check {background-color: #DDFFDD; border: 1px solid #008800;}
+    .check::before {content:url('check.png');}
+    .watch {background-color: #DDFFFF; border: 1px solid #008888;}
+    .watch::before {content:url('watch.png');}
   </style>
 </head>
 
 <body>
 
 
+  <div class="header">
+
     <h1>Songs for English Learning</h1>
     <h2>Welcome to your song list, Renato!</h2>
+    <p class="watch"> = NOT WATCHED YET</p>
+    <p class="check"> = ALREADY WATCHED</p>
+  </div>
 
   <div class="songs">
 
     <img src="bb-king.png" alt="B.B. King">
-    <p><a href="https://www.youtube.com/watch?v=Bvg69bmXa-U" target="_blank">B.B. King - Blues Man</a></p>
-    <p><a href="https://www.youtube.com/watch?v=FHbS4Z0u3qQ" target="_blank">B.B. King - Teardrops From My Eyes</a></p>
-    <p><a href="https://www.youtube.com/watch?v=V8IJJtPylS4" target="_blank">B.B. King - Why I Sing The Blues</a></p>
-    <p><a href="https://www.youtube.com/watch?v=8pe7JVJrgIc" target="_blank">B.B. King - The Thrill Is Gone</a></p>
-    <p><a href="https://www.youtube.com/watch?v=RNMLVAA28B0" target="_blank">B.B. King - My Guitar Sings the Blues</a></p>
-    <p><a href="https://www.youtube.com/watch?v=a03koGUxt-U" target="_blank">B.B. King - I Like to Live the Love</a></p>
-    <p><a href="https://www.youtube.com/watch?v=BhCB-QyNzGE" target="_blank">B.B. King - Lucille</a></p>
-    <p><a href="https://www.youtube.com/watch?v=DREJ9E1z7xc" target="_blank">B.B. King - To Know You is to Love You</a></p>
-    <p><a href="https://www.youtube.com/watch?v=uOQJoXyNkV8" target="_blank">B.B. King - How Blue Can You Get</a></p>
-    <p><a href="https://www.youtube.com/watch?v=FvJr6dzcMtA" target="_blank">B.B. King & U2 - When Love Comes To Town</a></p>
-    <p><a href="https://www.youtube.com/watch?v=mLGp8wcT7sg" target="_blank">B.B. King & Van Morrison - If You Love Me</a></p>
-    <p><a href="https://www.youtube.com/watch?v=qe7zS93w2Q4" target="_blank">B.B. King & Joe Cocker - Dangerous Mood</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=Bvg69bmXa-U" target="_blank">B.B. King - Blues Man</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=FHbS4Z0u3qQ" target="_blank">B.B. King - Teardrops From My Eyes</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=V8IJJtPylS4" target="_blank">B.B. King - Why I Sing The Blues</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=8pe7JVJrgIc" target="_blank">B.B. King - The Thrill Is Gone</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=RNMLVAA28B0" target="_blank">B.B. King - My Guitar Sings the Blues</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=a03koGUxt-U" target="_blank">B.B. King - I Like to Live the Love</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=BhCB-QyNzGE" target="_blank">B.B. King - Lucille</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=DREJ9E1z7xc" target="_blank">B.B. King - To Know You is to Love You</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=uOQJoXyNkV8" target="_blank">B.B. King - How Blue Can You Get</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=FvJr6dzcMtA" target="_blank">B.B. King & U2 - When Love Comes To Town</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=mLGp8wcT7sg" target="_blank">B.B. King & Van Morrison - If You Love Me</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=qe7zS93w2Q4" target="_blank">B.B. King & Joe Cocker - Dangerous Mood</a></p>
   </div>
 
   <div class="songs">
 
     <img src="beegees.png" alt="Bee Gees">
-    <p><a href="https://www.youtube.com/watch?v=IwvTRIyWfKM" target="_blank">Bee Gees - How Deep Is Your Love</a></p>
-    <p><a href="https://www.youtube.com/watch?v=-hGyrNChk5c" target="_blank">Bee Gees - Words</a></p>
-    <p><a href="https://www.youtube.com/watch?v=eOC-y5kACXU" target="_blank">Bee Gees - I Started A Joke</a></p>
-    <p><a href="https://www.youtube.com/watch?v=1Ic9dIuab2E" target="_blank">Bee Gees - Alone</a></p>
-    <p><a href="https://www.youtube.com/watch?v=2AW_rI_xQ3g" target="_blank">Bee Gees - One</a></p>
-    <p><a href="https://www.youtube.com/watch?v=yY9ZAJCiKAE" target="_blank">Bee Gees - To Love Somebody</a></p>
-    <p><a href="https://www.youtube.com/watch?v=DtxBUp6hBaI" target="_blank">Bee Gees - More Than A Woman</a></p>
-    <p><a href="https://www.youtube.com/watch?v=DDt_M6QSB9I" target="_blank">Bee Gees - Tomorrow Tomorrow</a></p>
-    <p><a href="https://www.youtube.com/watch?v=-AwVNEXajOI" target="_blank">Bee Gees - Massachusetts</a></p>
-    <p><a href="https://www.youtube.com/watch?v=IY4Aklp9rmw" target="_blank">Bee Gees - Cherry Red</a></p>
-    <p><a href="https://www.youtube.com/watch?v=7aok57AfU4s" target="_blank">Bee Gees - First Of May</a></p>
-    <p><a href="https://www.youtube.com/watch?v=FSbRDnYctL8" target="_blank">Bee Gees - You Should Be Dancing</a></p>
-    <p><a href="https://www.youtube.com/watch?v=jvoUMZ1IHt0" target="_blank">Bee Gees - You Win Again</a></p>
-    <p><a href="https://www.youtube.com/watch?v=qJLW6xGtl3Q" target="_blank">Bee Gees - Too Much Heaven</a></p>
-    <p><a href="https://www.youtube.com/watch?v=Tg_mKnRyQIg" target="_blank">Bee Gees - Reaching Out</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=IwvTRIyWfKM" target="_blank">Bee Gees - How Deep Is Your Love</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=-hGyrNChk5c" target="_blank">Bee Gees - Words</a></p>
+    <p class="check"><a href="https://www.youtube.com/watch?v=eOC-y5kACXU" target="_blank">Bee Gees - I Started A Joke</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=1Ic9dIuab2E" target="_blank">Bee Gees - Alone</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=2AW_rI_xQ3g" target="_blank">Bee Gees - One</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=yY9ZAJCiKAE" target="_blank">Bee Gees - To Love Somebody</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=DtxBUp6hBaI" target="_blank">Bee Gees - More Than A Woman</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=DDt_M6QSB9I" target="_blank">Bee Gees - Tomorrow Tomorrow</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=-AwVNEXajOI" target="_blank">Bee Gees - Massachusetts</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=IY4Aklp9rmw" target="_blank">Bee Gees - Cherry Red</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=7aok57AfU4s" target="_blank">Bee Gees - First Of May</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=FSbRDnYctL8" target="_blank">Bee Gees - You Should Be Dancing</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=jvoUMZ1IHt0" target="_blank">Bee Gees - You Win Again</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=qJLW6xGtl3Q" target="_blank">Bee Gees - Too Much Heaven</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=Tg_mKnRyQIg" target="_blank">Bee Gees - Reaching Out</a></p>
   </div>
 
   <div class="songs">
 
     <img src="billy-joel.png" alt="Billy Joel">
-    <p><a href="https://www.youtube.com/watch?v=4XoZvPPXcxM" target="_blank">Billy Joel - Just The Way You Are</a></p>
-    <p><a href="https://www.youtube.com/watch?v=p66Q5btJ9ak" target="_blank">Billy Joel - The River Of Dreams</a></p>
-    <p><a href="https://www.youtube.com/watch?v=LNpbDzNG45Q" target="_blank">Billy Joel - Honesty</a></p>
-    <p><a href="https://www.youtube.com/watch?v=UrcTcq28mqU" target="_blank">Billy Joel - An Innocent Man</a></p>
-    <p><a href="https://www.youtube.com/watch?v=C30oqq-McMU" target="_blank">Billy Joel - Vienna</a></p>
-    <p><a href="https://www.youtube.com/watch?v=B9IZg2lw1s8" target="_blank">Billy Joel - Piano Man</a></p>
-    <p><a href="https://www.youtube.com/watch?v=U2qLu1CYBf4" target="_blank">Billy Joel - Tell Her About It</a></p>
-    <p><a href="https://www.youtube.com/watch?v=UJJFuEBLJ4w" target="_blank">Billy Joel - And So It Goes</a></p>
-    <p><a href="https://www.youtube.com/watch?v=8buJ2-oD02E" target="_blank">Billy Joel - Movin' Out</a></p>
-    <p><a href="https://www.youtube.com/watch?v=2CictW_HMyA" target="_blank">Billy Joel - My Life</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=4XoZvPPXcxM" target="_blank">Billy Joel - Just The Way You Are</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=p66Q5btJ9ak" target="_blank">Billy Joel - The River Of Dreams</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=LNpbDzNG45Q" target="_blank">Billy Joel - Honesty</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=UrcTcq28mqU" target="_blank">Billy Joel - An Innocent Man</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=C30oqq-McMU" target="_blank">Billy Joel - Vienna</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=B9IZg2lw1s8" target="_blank">Billy Joel - Piano Man</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=U2qLu1CYBf4" target="_blank">Billy Joel - Tell Her About It</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=UJJFuEBLJ4w" target="_blank">Billy Joel - And So It Goes</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=8buJ2-oD02E" target="_blank">Billy Joel - Movin' Out</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=2CictW_HMyA" target="_blank">Billy Joel - My Life</a></p>
   </div>
 
   <div class="songs">
 
     <img src="elton-john.png" alt="Elton John">
-    <p><a href="https://www.youtube.com/watch?v=1cval0JWlyc" target="_blank">Elton John - Your Song</a></p>
-    <p><a href="https://www.youtube.com/watch?v=Dqi5GiDojLg" target="_blank">Elton John - Candle In The Wind</a></p>
-    <p><a href="https://www.youtube.com/watch?v=BD2miskgDK4" target="_blank">Elton John - Rocket Man</a></p>
-    <p><a href="https://www.youtube.com/watch?v=yQu8oL2mfz0" target="_blank">Elton John - Sacrifice</a></p>
-    <p><a href="https://www.youtube.com/watch?v=Al8UHnjusq0" target="_blank">Elton John - Tiny Dancer</a></p>
-    <p><a href="https://www.youtube.com/watch?v=fTtgVSxfr5M" target="_blank">Elton John - Can You Feel The Love Tonight</a></p>
-    <p><a href="https://www.youtube.com/watch?v=DDOL7iY8kfo" target="_blank">Elton John - Goodbye Yellow Brick Road</a></p>
-    <p><a href="https://www.youtube.com/watch?v=d68JWRd-NUU" target="_blank">Elton John - Daniel</a></p>
-    <p><a href="https://www.youtube.com/watch?v=XEh2Pc1dfRo" target="_blank">Elton John - The One</a></p>
-    <p><a href="https://www.youtube.com/watch?v=kswNSWRFvO4" target="_blank">Elton John - Nikita</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=1cval0JWlyc" target="_blank">Elton John - Your Song</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=Dqi5GiDojLg" target="_blank">Elton John - Candle In The Wind</a></p>
+    <p class="check"><a href="https://www.youtube.com/watch?v=BD2miskgDK4" target="_blank">Elton John - Rocket Man</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=yQu8oL2mfz0" target="_blank">Elton John - Sacrifice</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=Al8UHnjusq0" target="_blank">Elton John - Tiny Dancer</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=fTtgVSxfr5M" target="_blank">Elton John - Can You Feel The Love Tonight</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=DDOL7iY8kfo" target="_blank">Elton John - Goodbye Yellow Brick Road</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=d68JWRd-NUU" target="_blank">Elton John - Daniel</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=XEh2Pc1dfRo" target="_blank">Elton John - The One</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=kswNSWRFvO4" target="_blank">Elton John - Nikita</a></p>
   </div>
 
   <div class="songs">
 
     <img src="elvis-presley.png" alt="Elvis Presley">
-    <p><a href="https://www.youtube.com/watch?v=jYeReAqfaRQ" target="_blank">Elvis Presley - Always On My Mind</a></p>
-    <p><a href="https://www.youtube.com/watch?v=2YFYRYUoCPQ" target="_blank">Elvis Presley - Can't Help Falling In Love</a></p>
-    <p><a href="https://www.youtube.com/watch?v=-Y-bd3aDMGA" target="_blank">Elvis Presley - Love Me Tender</a></p>
-    <p><a href="https://www.youtube.com/watch?v=ATDJ8VPJG5s" target="_blank">Elvis Presley - All Shook Up</a></p>
-    <p><a href="https://www.youtube.com/watch?v=2En0ZyjQgU4" target="_blank">Elvis Presley - In the Ghetto</a></p>
-    <p><a href="https://www.youtube.com/watch?v=quosahdp8LM" target="_blank">Elvis Presley - It's Now Or Never</a></p>
-    <p><a href="https://www.youtube.com/watch?v=alb8ED1jtYI" target="_blank">Elvis Presley - Suspicious Minds</a></p>
-    <p><a href="https://www.youtube.com/watch?v=Im73ef2mgzY" target="_blank">Elvis Presley - I'll Remember You</a></p>
-    <p><a href="https://www.youtube.com/watch?v=qdknTnbg7Tw" target="_blank">Elvis Presley - Angel</a></p>
-    <p><a href="https://www.youtube.com/watch?v=W0Q0s2fFlPM" target="_blank">Elvis Presley - No More</a></p>
-    <p><a href="https://www.youtube.com/watch?v=p6Mdxs0IkZM" target="_blank">Elvis Presley - The Wonder of You</a></p>
-    <p><a href="https://www.youtube.com/watch?v=xrxFxGPg-is" target="_blank">Elvis Presley - Wooden Heart</a></p>
-    <p><a href="https://www.youtube.com/watch?v=X-7L-JU0Cb0" target="_blank">Elvis Presley - Paralyzed</a></p>
-    <p><a href="https://www.youtube.com/watch?v=hKouFD_YYeo" target="_blank">Elvis Presley - Surrender</a></p>
-    <p><a href="https://www.youtube.com/watch?v=H4-JxHuhwmg" target="_blank">Elvis Presley - Way Down</a></p>
-    <p><a href="https://www.youtube.com/watch?v=OB-YD47ddWI" target="_blank">Elvis Presley - Kiss me Quick</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=jYeReAqfaRQ" target="_blank">Elvis Presley - Always On My Mind</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=2YFYRYUoCPQ" target="_blank">Elvis Presley - Can't Help Falling In Love</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=-Y-bd3aDMGA" target="_blank">Elvis Presley - Love Me Tender</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=ATDJ8VPJG5s" target="_blank">Elvis Presley - All Shook Up</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=2En0ZyjQgU4" target="_blank">Elvis Presley - In the Ghetto</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=quosahdp8LM" target="_blank">Elvis Presley - It's Now Or Never</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=alb8ED1jtYI" target="_blank">Elvis Presley - Suspicious Minds</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=Im73ef2mgzY" target="_blank">Elvis Presley - I'll Remember You</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=qdknTnbg7Tw" target="_blank">Elvis Presley - Angel</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=W0Q0s2fFlPM" target="_blank">Elvis Presley - No More</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=p6Mdxs0IkZM" target="_blank">Elvis Presley - The Wonder of You</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=xrxFxGPg-is" target="_blank">Elvis Presley - Wooden Heart</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=X-7L-JU0Cb0" target="_blank">Elvis Presley - Paralyzed</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=hKouFD_YYeo" target="_blank">Elvis Presley - Surrender</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=H4-JxHuhwmg" target="_blank">Elvis Presley - Way Down</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=OB-YD47ddWI" target="_blank">Elvis Presley - Kiss me Quick</a></p>
   </div>
 
   <div class="songs">
 
     <img src="simon-garfunkel.png" alt="Simon & Garfunkel">
-    <p><a href="https://www.youtube.com/watch?v=bGLHadex0B0" target="_blank">Simon & Garfunkel - The Sound of Silence</a></p>
-    <p><a href="https://www.youtube.com/watch?v=nkXyreJV604" target="_blank">Simon & Garfunkel - Mrs. Robinson</a></p>
-    <p><a href="https://www.youtube.com/watch?v=iIm-YTrs4tM" target="_blank">Simon & Garfunkel - Bridge Over Troubled Water</a></p>
-    <p><a href="https://www.youtube.com/watch?v=MYPJOCxSUFc" target="_blank">Simon & Garfunkel - The Boxer</a></p>
-    <p><a href="https://www.youtube.com/watch?v=_NFIdgK7Qpw" target="_blank">Simon & Garfunkel - Cecilia</a></p>
-    <p><a href="https://www.youtube.com/watch?v=CNbltoivskc" target="_blank">Simon & Garfunkel - El Condor Pasa</a></p>
-    <p><a href="https://www.youtube.com/watch?v=PKY-smJ6aBQ" target="_blank">Simon & Garfunkel - I Am a Rock</a></p>
-    <p><a href="https://www.youtube.com/watch?v=khfPACSsVqU" target="_blank">Simon & Garfunkel - Kathy's Song</a></p>
-    <p><a href="https://www.youtube.com/watch?v=tc9onKMl46E" target="_blank">Simon & Garfunkel - America</a></p>
-    <p><a href="https://www.youtube.com/watch?v=zMu_1IT4A9w" target="_blank">Simon & Garfunkel - Homeward Bound</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=bGLHadex0B0" target="_blank">Simon & Garfunkel - The Sound of Silence</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=nkXyreJV604" target="_blank">Simon & Garfunkel - Mrs. Robinson</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=iIm-YTrs4tM" target="_blank">Simon & Garfunkel - Bridge Over Troubled Water</a></p>
+    <p class="check"><a href="https://www.youtube.com/watch?v=MYPJOCxSUFc" target="_blank">Simon & Garfunkel - The Boxer</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=_NFIdgK7Qpw" target="_blank">Simon & Garfunkel - Cecilia</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=CNbltoivskc" target="_blank">Simon & Garfunkel - El Condor Pasa</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=PKY-smJ6aBQ" target="_blank">Simon & Garfunkel - I Am a Rock</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=khfPACSsVqU" target="_blank">Simon & Garfunkel - Kathy's Song</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=tc9onKMl46E" target="_blank">Simon & Garfunkel - America</a></p>
+    <p class="check"><a href="https://www.youtube.com/watch?v=zMu_1IT4A9w" target="_blank">Simon & Garfunkel - Homeward Bound</a></p>
   </div>
 
   <div class="songs">
 
     <img src="the-beatles.png" alt="The Beatles">
-    <p><a href="https://www.youtube.com/watch?v=tSgUB8T8Zfw" target="_blank">The Beatles - Let It Be</a></p>
-    <p><a href="https://www.youtube.com/watch?v=VsmNQyntKL8" target="_blank">The Beatles - Something</a></p>
-    <p><a href="https://www.youtube.com/watch?v=7qMls5yxP1w" target="_blank">The Beatles - Hey Jude</a></p>
-    <p><a href="https://www.youtube.com/watch?v=AT6n5ws4vWk" target="_blank">The Beatles - In My Life</a></p>
-    <p><a href="https://www.youtube.com/watch?v=WSuVCyT63II" target="_blank">The Beatles - Yesterday</a></p>
-    <p><a href="https://www.youtube.com/watch?v=zi6JI3K-ANc" target="_blank">The Beatles - There's a Place</a></p>
-    <p><a href="https://www.youtube.com/watch?v=kn9CfXJvJHk" target="_blank">The Beatles - Help!</a></p>
-    <p><a href="https://www.youtube.com/watch?v=cIN_ev8Msvo" target="_blank">The Beatles - Come Together</a></p>
-    <p><a href="https://www.youtube.com/watch?v=mc1ta1UMGeo" target="_blank">The Beatles - Here Comes the Sun</a></p>
-    <p><a href="https://www.youtube.com/watch?v=6d5ST3tbPIU" target="_blank">The Beatles - Let It Be</a></p>
-    <p><a href="https://www.youtube.com/watch?v=gq5SwK0bGCM" target="_blank">The Beatles - All You Need is Love</a></p>
-    <p><a href="https://www.youtube.com/watch?v=CHLQs6u9wXw" target="_blank">The Beatles - Here There and Everywhere</a></p>
-    <p><a href="https://www.youtube.com/watch?v=RYdxVlsYJvg" target="_blank">The Beatles - Anna</a></p>
-    <p><a href="https://www.youtube.com/watch?v=BD75RTV9P5w" target="_blank">The Beatles - Hello, Goodbye</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=tSgUB8T8Zfw" target="_blank">The Beatles - Let It Be</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=VsmNQyntKL8" target="_blank">The Beatles - Something</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=7qMls5yxP1w" target="_blank">The Beatles - Hey Jude</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=AT6n5ws4vWk" target="_blank">The Beatles - In My Life</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=WSuVCyT63II" target="_blank">The Beatles - Yesterday</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=zi6JI3K-ANc" target="_blank">The Beatles - There's a Place</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=kn9CfXJvJHk" target="_blank">The Beatles - Help!</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=cIN_ev8Msvo" target="_blank">The Beatles - Come Together</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=mc1ta1UMGeo" target="_blank">The Beatles - Here Comes the Sun</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=6d5ST3tbPIU" target="_blank">The Beatles - Let It Be</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=gq5SwK0bGCM" target="_blank">The Beatles - All You Need is Love</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=CHLQs6u9wXw" target="_blank">The Beatles - Here There and Everywhere</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=RYdxVlsYJvg" target="_blank">The Beatles - Anna</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=BD75RTV9P5w" target="_blank">The Beatles - Hello, Goodbye</a></p>
   </div>
 
   <div class="songs">
 
     <img src="others.png" alt="Others">
-    <p><a href="https://www.youtube.com/watch?v=VY1MfP9WUQk" target="_blank">Sting - Englishman in New York</a></p>
-    <p><a href="https://www.youtube.com/watch?v=yDWvY_114gM" target="_blank">Don McLean - American Pie</a></p>
-    <p><a href="https://www.youtube.com/watch?v=-Hk2oZlaMkw" target="_blank">The Rolling Stones - Wild Horses</a></p>
-    <p><a href="https://www.youtube.com/watch?v=EqPtz5qN7HM" target="_blank">Eagles - Hotel California</a></p>
+    <p class="check"><a href="https://www.youtube.com/watch?v=VY1MfP9WUQk" target="_blank">Sting - Englishman in New York</a></p>
+    <p class="check"><a href="https://www.youtube.com/watch?v=yDWvY_114gM" target="_blank">Don McLean - American Pie</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=-Hk2oZlaMkw" target="_blank">The Rolling Stones - Wild Horses</a></p>
+    <p class="watch"><a href="https://www.youtube.com/watch?v=EqPtz5qN7HM" target="_blank">Eagles - Hotel California</a></p>
   </div>
 
     <p>All rights reserved to the respective authors of the songs.</p>
