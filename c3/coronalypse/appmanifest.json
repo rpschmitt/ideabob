@@ -1,6 +1,6 @@
 {
-	"name": "Coronalypse (Test Version)",
-	"short_name": "Coronalypse (Test Version)",
+	"name": "Coronalypse",
+	"short_name": "Coronalypse",
 	"description": "Coronalypse",
 	"start_url": "index.html",
 	"display": "fullscreen",

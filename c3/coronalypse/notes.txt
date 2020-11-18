@@ -129,3 +129,10 @@ Há rumores de uma pessoa que tomou uma overdose de cloroquina no dia da transfo
 ---
 
 
+
+Missões:
+
+Parte 1: Tutorial (uma missão fácil)
+Parte 2: Instalar barreira de som ao redor da base (oito missões normais)
+Parte 3: Resgatar as partes do gerador de energia (quatro missões difíceis)
+

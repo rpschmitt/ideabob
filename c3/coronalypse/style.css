@@ -42,3 +42,13 @@ html, body, canvas {
 	src: url('fonts/cella.otf') format('opentype');
 }
 
+@font-face {
+	font-family: 'ds-digib';
+	src: url('fonts/ds-digib.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'origicide';
+	src: url('fonts/origicide.ttf') format('truetype');
+}
+
