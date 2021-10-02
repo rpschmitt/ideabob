@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1633148314,
+	"version": 1633187156,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -93,6 +93,7 @@
 		"images/endcity2.png",
 		"images/endgame-sheet0.png",
 		"images/endsword-sheet0.png",
+		"images/particlepowerup.png",
 		"media/slime-die.ogg",
 		"media/shuriken-hit.ogg",
 		"media/sword-attack.ogg",
