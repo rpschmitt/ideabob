@@ -1,7 +1,7 @@
 {
-	"name": "AstroWheel",
-	"short_name": "AstroWheel",
-	"description": "AstroWheel",
+	"name": "RodaCeleste",
+	"short_name": "RodaCeleste",
+	"description": "RodaCeleste",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"orientation": "landscape",
